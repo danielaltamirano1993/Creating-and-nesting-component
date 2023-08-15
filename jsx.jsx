@@ -114,3 +114,5 @@ export default function ShoppingList() {
     <ul>{listItems}</ul>
   );
 }
+
+//Responding to events 
