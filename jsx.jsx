@@ -116,3 +116,37 @@ export default function ShoppingList() {
 }
 
 //Responding to events 
+function MyButton() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+
+//Updating the screen 
+
+import { useState } from 'react';
+
+function MyButton() {
+  const [count, setCount] = useState(0);
+  // ...
+  }
+
+  function MyButton() {
+    const [count, setCount] = useState(0);
+  
+    function handleClick() {
+      setCount(count + 1);
+    }
+  
+    return (
+      <button onClick={handleClick}>
+        Clicked {count} times
+      </button>
+    );
+  }
