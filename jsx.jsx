@@ -39,4 +39,15 @@ function AboutPage() {
   );
 }
 
+return (
+  <h1>
+    {user.name}
+  </h1>
+);
 
+return (
+  <img
+    className="avatar"
+    src={user.imageUrl}
+  />
+);
